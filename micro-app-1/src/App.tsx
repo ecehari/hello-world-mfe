@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     <h1>This is a dev container</h1>
+     <h1>This is a dev environment(mock of container) </h1>
      <HelloWorld/>
     </>
   )

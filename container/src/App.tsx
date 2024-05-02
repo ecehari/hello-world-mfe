@@ -1,18 +1,14 @@
-import { useEffect, useRef } from 'react'
 import './App.css'
-import mount from 'helloworld/HelloWorld';
+import HelloWorldRemote from './HelloWorldRemote'
+
 
 function App() {
-  const helloWorldDiv = useRef<HTMLDivElement|null>(null);
-
-  useEffect(() => {
-    mount(helloWorldDiv.current)
-  })
+ 
 
   return (
     <>
-     <p>This is the container</p>
-     <div ref={helloWorldDiv}></div>
+     <h3>This is the container app.tsx</h3>
+     <HelloWorldRemote/>
     </>
   )
 }

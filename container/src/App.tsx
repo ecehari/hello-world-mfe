@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useRef } from 'react'
 import './App.css'
+import mount from 'helloworld/HelloWorld';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const helloWorldDiv = useRef<HTMLDivElement|null>(null);
+
+  useEffect(() => {
+    mount(helloWorldDiv.current)
+  })
 
   return (
     <>
-     <h1>This is the dev container</h1>
+     <p>This is the container</p>
+     <div ref="helloWorldDiv"></div>
     </>
   )
 }

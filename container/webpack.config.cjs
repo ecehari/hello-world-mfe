@@ -9,7 +9,7 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 module.exports = {
     mode : 'development',
     devServer : {
-        port : xxxx,
+        port : 3000,
         historyApiFallback : {
             index : '/index.html'
         },

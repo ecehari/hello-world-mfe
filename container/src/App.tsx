@@ -12,7 +12,7 @@ function App() {
   return (
     <>
      <p>This is the container</p>
-     <div ref="helloWorldDiv"></div>
+     <div ref={helloWorldDiv}></div>
     </>
   )
 }
